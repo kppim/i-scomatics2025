@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Ensure there is no margin around the body */
+    padding: 0; /* Ensure there is no padding around the body */
+}
+
+.bg-darkblue {
+    background-color: #0a1f44; /* Dark Blue */
+}
+
+.bg-purple {
+    background-color: #660066; /* Purple */
+}
+
+.text-yellow {
+    color: #ffd700; /* Yellow */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0; /* Remove bottom margin from the navbar */
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.header-image {
+    width: 100%;
+    /* max-width: 600px; */
+    height: auto;
+    padding-top: 1em;
+}
+
+.header-text {
+    position: sticky;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section:first-of-type {
+    margin-top: 30px; /* Add margin to the first section for spacing */
+}
+
+footer {
+    background-color: #0a1f44; /* Dark Blue */
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0a1f44;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+#back-to-top:hover {
+    background-color: #ffd700; /* Yellow */
+}
+
+#back-to-top i {
+    font-size: 24px;
+}
+
+/* The following codes are for the photo of the speakers */
+
+/* Responsive images */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Limit image size on smaller screens */
+@media (max-width: 576px) {
+    .card-img-top {
+        max-width: 300px; /* Adjust this value as needed */
+        margin: 0 auto; /* Center the image */
+    }
+}
+
+/* Adjusting submenu position to the left */
+.nav-item .dropdown-menu > .dropdown-menu {
+  left: -100%; /* Shift the submenu to the left of the parent */
+  top: 0;
+  margin-left: 0; /* No margin for precise alignment */
+  min-width: 200px; /* Ensure a minimum width */
+}
+
+.dropdown-item {
+  white-space: nowrap; /* Prevent text from wrapping */
+}

@@ -1,0 +1,10 @@
+# Log file
+*.log
+
+# bash file
+*.sh
+*.json
+
+# Backup file
+*.bak
+#*.*.bak

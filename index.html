@@ -66,6 +66,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 999;
 }
 
 header h1 {
@@ -160,6 +161,7 @@ nav .submenu-container > a {
 
     nav.show {
       display: flex;
+      z-index: 1000;
     }
 
     .hamburger {
@@ -169,7 +171,13 @@ nav .submenu-container > a {
     .submenu {
       position: static;
     }
-
+  .submenu a {
+    color: white;
+  }
+  .submenu a:hover {
+    background: #933e80;
+    color: #f5f5f5;
+  }
     .submenu-container .submenu {
       display: none;
       flex-direction: column;
